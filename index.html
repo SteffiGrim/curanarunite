@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sumate a Curanar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8fafc;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #16a34a;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Sumate a Curanar</h1>
+
+  <form action="https://formspree.io/f/mbdqopva" method="POST">
+
+    <label>Nombre completo</label>
+    <input type="text" name="nombre" required>
+
+    <label>Teléfono</label>
+    <input type="text" name="telefono" required>
+
+    <label>Zona donde trabajás</label>
+    <input type="text" name="zona" placeholder="Ej: Recoleta, Palermo" required>
+
+    <label>Servicios que realizás</label>
+    <select name="servicios" multiple>
+      <option>Enfermería</option>
+      <option>Inyecciones</option>
+      <option>Control de presión</option>
+      <option>Curaciones</option>
+      <option>Acompañamiento</option>
+    </select>
+
+    <label>Días y horarios disponibles</label>
+    <textarea name="disponibilidad" placeholder="Ej: Lun a Vie 9 a 18"></textarea>
+
+    <button type="submit">Enviar datos</button>
+
+  </form>
+</div>
+
+</body>
+</html>
